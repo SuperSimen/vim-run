@@ -18,4 +18,8 @@ function! s:Runphp()
     :!php %
 endfunction
 
+function! s:Runhaskell()
+    :!runghc %
+endfunction
+
 autocmd BufEnter * :call s:FindFiletype()
