@@ -22,4 +22,8 @@ function! s:Runhaskell()
     :!runghc %
 endfunction
 
+function! s:Runvim()
+    :so %
+endfunction
+
 autocmd BufEnter * :call s:FindFiletype()
