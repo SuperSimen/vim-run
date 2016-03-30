@@ -26,4 +26,12 @@ function! s:Runvim()
     :so %
 endfunction
 
+function! s:Runjavascript()
+    :!node %
+endfunction
+
+function! s:Runsh()
+    :!./%
+endfunction
+
 autocmd BufEnter * :call s:FindFiletype()
