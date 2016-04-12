@@ -34,4 +34,8 @@ function! s:Runsh()
     :!./%
 endfunction
 
+function! s:Runjava()
+    :! javac % && java %:s?\..*$??
+endfunction
+
 autocmd BufEnter * :call s:FindFiletype()
