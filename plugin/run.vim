@@ -38,4 +38,8 @@ function! s:Runjava()
     :! javac % && java %:s?\..*$??
 endfunction
 
+function! s:Runclojure()
+    :! clojure %
+endfunction
+
 autocmd BufEnter * :call s:FindFiletype()
