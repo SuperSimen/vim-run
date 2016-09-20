@@ -39,7 +39,7 @@ function! s:Runjava()
 endfunction
 
 function! s:Runclojure()
-    :Eval
+    :%Eval
 endfunction
 
 autocmd BufEnter * :call s:FindFiletype()
