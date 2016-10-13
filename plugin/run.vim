@@ -1,4 +1,8 @@
 
+if exists('s:FindFiletype')
+    finish
+endif
+
 function! s:FindFiletype()
     let filetype = &filetype
     let functionName = 's:Run' . filetype
